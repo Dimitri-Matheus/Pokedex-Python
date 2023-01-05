@@ -86,5 +86,10 @@ poke_hb_1.place(x=195, y=300)
 poke_hb_2 = Label(janela, text='Electro Ball', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_hb_2.place(x=195, y=330)
 
+# Criando os botões
+
+
+
+
 
 janela.mainloop()
