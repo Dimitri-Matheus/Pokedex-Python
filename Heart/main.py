@@ -18,4 +18,4 @@ forward(133)
 end_fill()
 
 #Janela
-mainloop
+mainloop()
