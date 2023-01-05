@@ -43,7 +43,7 @@ imagem_pokemon = imagem_pokemon.resize((545, 230))
 imagem_pokemon = ImageTk.PhotoImage(imagem_pokemon)
 
 poke_img = Label(frame_pokemon,image=imagem_pokemon, relief='flat', bg=Branco, fg=Preto)
-poke_img.place(x=0, y=5)
+poke_img.place(x=0, y=3)
 
 poke_nome.lift()
 poke_tipo.lift()
@@ -52,6 +52,26 @@ poke_id.lift()
 # Status
 poke_status = Label(janela, text='Status', relief='flat', anchor=CENTER, font=('Verdana 20'), bg=Branco, fg=Preto)
 poke_status.place(x=15, y=250)
+
+# HP
+poke_hp = Label(janela, text='HP: 35', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hp.place(x=15, y=300)
+
+# Ataque
+poke_atk = Label(janela, text='Ataque: 55', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_atk.place(x=15, y=325)
+
+# Defesa
+poke_def = Label(janela, text='Defesa: 40', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_def.place(x=15, y=350)
+
+# Velocidade
+poke_agi = Label(janela, text='Velocidade: 90', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_agi.place(x=15, y=375)
+
+# Total
+poke_tot = Label(janela, text=f'Total: 220', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Valor)
+poke_tot.place(x=15, y=400)
 
 
 janela.mainloop()
