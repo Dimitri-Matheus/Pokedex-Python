@@ -88,8 +88,52 @@ poke_hb_2.place(x=195, y=330)
 
 # Criando os botões
 
+# Imagem dos botões 1
+imagem_pokemon_1 = Image.open('image/pokeball.png')
+imagem_pokemon_1 = imagem_pokemon_1.resize((40, 40))
+imagem_pokemon_1 = ImageTk.PhotoImage(imagem_pokemon_1)
 
+b_poke_img = Button(janela,image=imagem_pokemon_1, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img.place(x=375, y=250)
 
+# Imagem dos botões 2
+imagem_pokemon_2 = Image.open('image/pokeball.png')
+imagem_pokemon_2 = imagem_pokemon_2.resize((40, 40))
+imagem_pokemon_2 = ImageTk.PhotoImage(imagem_pokemon_2)
 
+b_poke_img = Button(janela,image=imagem_pokemon_2, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img.place(x=375, y=250)
+
+# Imagem dos botões 3
+imagem_pokemon_3 = Image.open('image/pokeball.png')
+imagem_pokemon_3 = imagem_pokemon_3.resize((40, 40))
+imagem_pokemon_3 = ImageTk.PhotoImage(imagem_pokemon_3)
+
+b_poke_img = Button(janela,image=imagem_pokemon_3, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img.place(x=375, y=250)
+
+# Imagem dos botões 4
+imagem_pokemon_4 = Image.open('image/pokeball.png')
+imagem_pokemon_4 = imagem_pokemon_4.resize((40, 40))
+imagem_pokemon_4 = ImageTk.PhotoImage(imagem_pokemon_4)
+
+b_poke_img = Button(janela,image=imagem_pokemon_4, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img.place(x=375, y=250)
+
+# Imagem dos botões 5
+imagem_pokemon_5 = Image.open('image/pokeball.png')
+imagem_pokemon_5 = imagem_pokemon_5.resize((40, 40))
+imagem_pokemon_5 = ImageTk.PhotoImage(imagem_pokemon_5)
+
+b_poke_img = Button(janela,image=imagem_pokemon_5, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img.place(x=375, y=250)
+
+# Imagem dos botões 6
+imagem_pokemon_6 = Image.open('image/pokeball.png')
+imagem_pokemon_6 = imagem_pokemon_6.resize((40, 40))
+imagem_pokemon_6 = ImageTk.PhotoImage(imagem_pokemon_6)
+
+b_poke_img = Button(janela,image=imagem_pokemon_6, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img.place(x=375, y=250)
 
 janela.mainloop()
