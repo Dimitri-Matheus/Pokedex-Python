@@ -37,4 +37,18 @@ poke_tipo.place(x=12, y=50)
 poke_id = Label(frame_pokemon, text='#025', relief='flat', anchor=CENTER, font=('Ivy 10 bold'), bg=Branco, fg=Preto)
 poke_id.place(x=12, y=75)
 
+# Imagens
+imagem_pokemon = Image.open('image/Pikachu.png')
+imagem_pokemon = imagem_pokemon.resize((545, 230))
+imagem_pokemon = ImageTk.PhotoImage(imagem_pokemon)
+
+poke_img = Label(frame_pokemon,image=imagem_pokemon, relief='flat', bg=Branco, fg=Preto)
+poke_img.place(x=0, y=5)
+
+poke_nome.lift()
+poke_tipo.lift()
+poke_id.lift()
+
+
+
 janela.mainloop()
