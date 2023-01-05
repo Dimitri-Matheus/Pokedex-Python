@@ -43,8 +43,9 @@ imagem_pokemon = imagem_pokemon.resize((545, 230))
 imagem_pokemon = ImageTk.PhotoImage(imagem_pokemon)
 
 poke_img = Label(frame_pokemon,image=imagem_pokemon, relief='flat', bg=Branco, fg=Preto)
-poke_img.place(x=0, y=3)
+poke_img.place(x=0, y=5)
 
+# Ajustes das imagens
 poke_nome.lift()
 poke_tipo.lift()
 poke_id.lift()
@@ -59,19 +60,31 @@ poke_hp.place(x=15, y=300)
 
 # Ataque
 poke_atk = Label(janela, text='Ataque: 55', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
-poke_atk.place(x=15, y=325)
+poke_atk.place(x=15, y=330)
 
 # Defesa
 poke_def = Label(janela, text='Defesa: 40', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
-poke_def.place(x=15, y=350)
+poke_def.place(x=15, y=360)
 
 # Velocidade
 poke_agi = Label(janela, text='Velocidade: 90', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
-poke_agi.place(x=15, y=375)
+poke_agi.place(x=15, y=390)
 
 # Total
 poke_tot = Label(janela, text=f'Total: 220', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Valor)
-poke_tot.place(x=15, y=400)
+poke_tot.place(x=15, y=420)
+
+# Habilidades
+poke_status = Label(janela, text='Habilidades', relief='flat', anchor=CENTER, font=('Verdana 20'), bg=Branco, fg=Preto)
+poke_status.place(x=180, y=250)
+
+# HB1
+poke_hb_1 = Label(janela, text='Thunder Shock', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hb_1.place(x=195, y=300)
+
+# HB2
+poke_hb_2 = Label(janela, text='Electro Ball', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hb_2.place(x=195, y=330)
 
 
 janela.mainloop()
