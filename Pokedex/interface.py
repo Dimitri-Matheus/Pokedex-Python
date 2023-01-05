@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 from ttkthemes import ThemedTk
+from customtkinter import *
 
 # cores
 Preto = "#444466"  # Preta
@@ -89,51 +90,52 @@ poke_hb_2.place(x=195, y=330)
 # Criando os botões
 
 # Imagem dos botões 1
-imagem_pokemon_1 = Image.open('image/pokeball.png')
+imagem_pokemon_1 = Image.open('image/premierball.png')
 imagem_pokemon_1 = imagem_pokemon_1.resize((40, 40))
 imagem_pokemon_1 = ImageTk.PhotoImage(imagem_pokemon_1)
 
-b_poke_img = Button(janela,image=imagem_pokemon_1, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
-b_poke_img.place(x=375, y=250)
+b_poke_img_1 = Button(janela,image=imagem_pokemon_1, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_1.place(x=375, y=235)
 
 # Imagem dos botões 2
-imagem_pokemon_2 = Image.open('image/pokeball.png')
+imagem_pokemon_2 = Image.open('image/premierball.png')
 imagem_pokemon_2 = imagem_pokemon_2.resize((40, 40))
 imagem_pokemon_2 = ImageTk.PhotoImage(imagem_pokemon_2)
 
-b_poke_img = Button(janela,image=imagem_pokemon_2, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
-b_poke_img.place(x=375, y=250)
+b_poke_img_2 = Button(janela,image=imagem_pokemon_2, text='Eevee', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_2.place(x=375, y=280)
 
 # Imagem dos botões 3
 imagem_pokemon_3 = Image.open('image/pokeball.png')
 imagem_pokemon_3 = imagem_pokemon_3.resize((40, 40))
 imagem_pokemon_3 = ImageTk.PhotoImage(imagem_pokemon_3)
 
-b_poke_img = Button(janela,image=imagem_pokemon_3, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
-b_poke_img.place(x=375, y=250)
+b_poke_img_3 = Button(janela,image=imagem_pokemon_3, text='Bulbasaur', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_3.place(x=375, y=325)
 
 # Imagem dos botões 4
 imagem_pokemon_4 = Image.open('image/pokeball.png')
 imagem_pokemon_4 = imagem_pokemon_4.resize((40, 40))
 imagem_pokemon_4 = ImageTk.PhotoImage(imagem_pokemon_4)
 
-b_poke_img = Button(janela,image=imagem_pokemon_4, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
-b_poke_img.place(x=375, y=250)
+b_poke_img_4 = Button(janela,image=imagem_pokemon_4, text='Charmander', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_4.place(x=375, y=370)
 
 # Imagem dos botões 5
 imagem_pokemon_5 = Image.open('image/pokeball.png')
 imagem_pokemon_5 = imagem_pokemon_5.resize((40, 40))
 imagem_pokemon_5 = ImageTk.PhotoImage(imagem_pokemon_5)
 
-b_poke_img = Button(janela,image=imagem_pokemon_5, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
-b_poke_img.place(x=375, y=250)
+b_poke_img_5 = Button(janela,image=imagem_pokemon_5, text='Squirtle', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_5.place(x=375, y=415)
 
 # Imagem dos botões 6
-imagem_pokemon_6 = Image.open('image/pokeball.png')
+imagem_pokemon_6 = Image.open('image/ultraball.png')
 imagem_pokemon_6 = imagem_pokemon_6.resize((40, 40))
 imagem_pokemon_6 = ImageTk.PhotoImage(imagem_pokemon_6)
 
-b_poke_img = Button(janela,image=imagem_pokemon_6, text='Pikachu', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
-b_poke_img.place(x=375, y=250)
+b_poke_img_6 = Button(janela,image=imagem_pokemon_6, text='Dragonite', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_6.place(x=375, y=460)
+
 
 janela.mainloop()
