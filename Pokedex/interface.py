@@ -26,15 +26,15 @@ frame_pokemon = Frame(janela, width=550, height=230, relie='flat')
 frame_pokemon.grid(row=1, column=0)
 
 # Nome
-poke_nome = Label(frame_pokemon, text='Pikachu', relief='flat', anchor=CENTER, font=('Fixedsys 20'), bg=Branco, fg=Preto)
+poke_nome = Label(frame_pokemon, text='Pikachu', relief='flat', anchor=CENTER, font=('Fixedsys 20'), bg=Letra, fg=Branco)
 poke_nome.place(x=12, y=15)
 
 # Tipo
-poke_tipo = Label(frame_pokemon, text='Elétrico', relief='flat', anchor=CENTER, font=('Ivy 10 bold'), bg=Branco, fg=Preto)
+poke_tipo = Label(frame_pokemon, text='Elétrico', relief='flat', anchor=CENTER, font=('Ivy 10 bold'), bg=Letra, fg=Branco)
 poke_tipo.place(x=12, y=50)
 
 # ID
-poke_id = Label(frame_pokemon, text='#025', relief='flat', anchor=CENTER, font=('Ivy 10 bold'), bg=Branco, fg=Preto)
+poke_id = Label(frame_pokemon, text='#025', relief='flat', anchor=CENTER, font=('Ivy 10 bold'), bg=Letra, fg=Branco)
 poke_id.place(x=12, y=75)
 
 # Imagens
@@ -49,6 +49,9 @@ poke_nome.lift()
 poke_tipo.lift()
 poke_id.lift()
 
+# Status
+poke_status = Label(janela, text='Status', relief='flat', anchor=CENTER, font=('Verdana 20'), bg=Branco, fg=Preto)
+poke_status.place(x=15, y=250)
 
 
 janela.mainloop()
