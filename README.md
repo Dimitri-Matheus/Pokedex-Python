@@ -1,5 +1,4 @@
 # Projeto_Pokedex
- Meus projetos e exercicios feitos por mim.
+ Meu Projeto-Pokedex feito em python.
 
- Principalmente projetos em python.
- No caso eu fiz uma pokedex usando tkinter e modularização.
+A pokedex foi feita usando tkinter e outras features.
