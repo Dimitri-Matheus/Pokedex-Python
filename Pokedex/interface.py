@@ -8,12 +8,12 @@ import random
 from database import *
 
 # cores
-Preto = "#444466"  # Preta
-Branco = "#feffff"  # branco
-Azul = "#6f9fbd"  # azul
-Vermelho = "#ef5350"   # vermelho
-Valor = "#38576b"  # valor
-Letra = "#403d3d"   # letra
+Preto = "#444466"
+Branco = "#feffff"
+Azul = "#6f9fbd"
+Vermelho = "#ef5350"
+Valor = "#38576b"
+Letra = "#403d3d"
 
 
 # Criando a janela
@@ -59,8 +59,11 @@ def trocar_pokemon(i):
     poke_agi['text'] = pokemon[i]['status'][3]
     poke_tot['text'] = pokemon[i]['status'][4]
 
-
-
+    # Exibindo as habilidades do pokemon
+    poke_hb_1['text'] = pokemon[i]['habilidades'][0]
+    poke_hb_2['text'] = pokemon[i]['habilidades'][1]
+    poke_hb_3['text'] = pokemon[i]['habilidades'][2]
+    poke_hb_4['text'] = pokemon[i]['habilidades'][3]
 
 
 # Nome
@@ -80,23 +83,23 @@ poke_status = Label(janela, text='Status', relief='flat', anchor=CENTER, font=('
 poke_status.place(x=15, y=250)
 
 # HP
-poke_hp = Label(janela, text='HP: 35', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hp = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_hp.place(x=15, y=300)
 
 # Ataque
-poke_atk = Label(janela, text='Ataque: 55', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_atk = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_atk.place(x=15, y=330)
 
 # Defesa
-poke_def = Label(janela, text='Defesa: 40', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_def = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_def.place(x=15, y=360)
 
 # Velocidade
-poke_agi = Label(janela, text='Velocidade: 90', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_agi = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_agi.place(x=15, y=390)
 
 # Total
-poke_tot = Label(janela, text=f'Total: 220', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Valor)
+poke_tot = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Valor)
 poke_tot.place(x=15, y=420)
 
 # Habilidades
@@ -104,12 +107,20 @@ poke_status = Label(janela, text='Habilidades', relief='flat', anchor=CENTER, fo
 poke_status.place(x=180, y=250)
 
 # HB1
-poke_hb_1 = Label(janela, text='Thunder Shock', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hb_1 = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_hb_1.place(x=195, y=300)
 
 # HB2
-poke_hb_2 = Label(janela, text='Electro Ball', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hb_2 = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
 poke_hb_2.place(x=195, y=330)
+
+# HB3
+poke_hb_3 = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hb_3.place(x=195, y=360)
+
+# HB4
+poke_hb_4 = Label(janela, text='', relief='flat', anchor=CENTER, font=('Verdana 10'), bg=Branco, fg=Letra)
+poke_hb_4.place(x=195, y=390)
 
 # Criando os botões
 
@@ -134,7 +145,7 @@ imagem_pokemon_3 = Image.open('image/pokeball.png')
 imagem_pokemon_3 = imagem_pokemon_3.resize((40, 40))
 imagem_pokemon_3 = ImageTk.PhotoImage(imagem_pokemon_3)
 
-b_poke_img_3 = Button(janela, command=lambda:trocar_pokemon('Bulbasaur'),image=imagem_pokemon_3, text='Bulbasaur', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
+b_poke_img_3 = Button(janela, command=lambda:trocar_pokemon('Bulbasaur'), image=imagem_pokemon_3, text='Bulbasaur', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
 b_poke_img_3.place(x=375, y=325)
 
 # Imagem dos botões 4
