@@ -30,9 +30,9 @@ pokemon = {
         "tipo" : ['#07', 'Água', 'image/Squirtle.png'],
     },
 
-    'Dragonite' : {
-        "status" : ['HP: 91', 'Ataque: 134', 'Defesa: 95', 'Velocidade: 80', 'Total: 400'],
-        "habilidades" : ['Extreme Speed', 'Fire Punch', 'Dragon Rush', 'Dragon Dance'],
-        "tipo" : ['#149', 'Dragão - Voador', 'image/Dragonite.png'],
+    'Kecleon' : {
+        "status" : ['HP: 60', 'Ataque: 90', 'Defesa: 70', 'Velocidade: 40', 'Total: 260'],
+        "habilidades" : ['Lick', 'Psybeam', 'Shadow Claw', 'Sucker Punch'],
+        "tipo" : ['#352', 'Normal', 'image/Kecleon.png'],
     }
 }
