@@ -3,7 +3,8 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 from ttkthemes import ThemedTk
-from customtkinter import *
+import tkinter
+import customtkinter
 
 # cores
 Preto = "#444466"  # Preta
@@ -90,7 +91,7 @@ poke_hb_2.place(x=195, y=330)
 # Criando os botões
 
 # Imagem dos botões 1
-imagem_pokemon_1 = Image.open('image/premierball.png')
+imagem_pokemon_1 = Image.open('image/pokeball.png')
 imagem_pokemon_1 = imagem_pokemon_1.resize((40, 40))
 imagem_pokemon_1 = ImageTk.PhotoImage(imagem_pokemon_1)
 
@@ -98,7 +99,7 @@ b_poke_img_1 = Button(janela,image=imagem_pokemon_1, text='Pikachu', width=150, 
 b_poke_img_1.place(x=375, y=235)
 
 # Imagem dos botões 2
-imagem_pokemon_2 = Image.open('image/premierball.png')
+imagem_pokemon_2 = Image.open('image/pokeball.png')
 imagem_pokemon_2 = imagem_pokemon_2.resize((40, 40))
 imagem_pokemon_2 = ImageTk.PhotoImage(imagem_pokemon_2)
 
@@ -130,7 +131,7 @@ b_poke_img_5 = Button(janela,image=imagem_pokemon_5, text='Squirtle', width=150,
 b_poke_img_5.place(x=375, y=415)
 
 # Imagem dos botões 6
-imagem_pokemon_6 = Image.open('image/ultraball.png')
+imagem_pokemon_6 = Image.open('image/pokeball.png')
 imagem_pokemon_6 = imagem_pokemon_6.resize((40, 40))
 imagem_pokemon_6 = ImageTk.PhotoImage(imagem_pokemon_6)
 
