@@ -3,14 +3,15 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 from ttkthemes import ThemedTk
+import random
 
 from database import *
 
 # cores
 Preto = "#444466"  # Preta
-Branco = "#feffff"  # branca
+Branco = "#feffff"  # branco
 Azul = "#6f9fbd"  # azul
-Vermelho = "#ef5350"   # vermelha
+Vermelho = "#ef5350"   # vermelho
 Valor = "#38576b"  # valor
 Letra = "#403d3d"   # letra
 
@@ -50,7 +51,6 @@ def trocar_pokemon(i):
     poke_nome.lift()
     poke_tipo.lift()
     poke_id.lift()
-
 
 
 # Nome
@@ -151,5 +151,11 @@ imagem_pokemon_6 = ImageTk.PhotoImage(imagem_pokemon_6)
 b_poke_img_6 = Button(janela, command=lambda:trocar_pokemon('Kecleon'), image=imagem_pokemon_6, text='Kecleon', width=150, relief='raised', overrelief=RIDGE, compound=LEFT, anchor=NW, padx=5, font='Verdana 12',bg=Branco, fg=Preto)
 b_poke_img_6.place(x=375, y=460)
 
+# Ordem aleatória
+lista_pokemons = ['Pikachu', 'Eevee', 'Bulbasaur', 'Squirtle', 'Kecleon']
+pokemon_escolhido = random.sample(lista_pokemons, 1)
+
+print(f'O pokémon {pokemon_escolhido[0]} foi escolhido!')
+trocar_pokemon(pokemon_escolhido[0])
 
 janela.mainloop()
