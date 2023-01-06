@@ -32,7 +32,7 @@ frame_pokemon.grid(row=1, column=0)
 def trocar_pokemon(i):
     global imagem_pokemon, poke_img
 
-    # Tipo do pokemon
+    # Exbindo o tipo do pokemon
     poke_nome['text'] = i
     poke_tipo['text'] = pokemon[i]['tipo'][1]
     poke_id['text'] = pokemon[i]['tipo'][0]
@@ -51,6 +51,16 @@ def trocar_pokemon(i):
     poke_nome.lift()
     poke_tipo.lift()
     poke_id.lift()
+
+    # Exibindo o status do pokemon
+    poke_hp['text'] = pokemon[i]['status'][0]
+    poke_atk['text'] = pokemon[i]['status'][1]
+    poke_def['text'] = pokemon[i]['status'][2]
+    poke_agi['text'] = pokemon[i]['status'][3]
+    poke_tot['text'] = pokemon[i]['status'][4]
+
+
+
 
 
 # Nome
