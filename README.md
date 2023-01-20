@@ -1,5 +1,5 @@
 # Pokedex com Python
- Um projeto com intuito de fazer uma pokedex usando a linguagem python 🐍.
+ Um projeto com intuito de fazer uma pokedex usando a linguagem python 🐍
 
 ## O que eu usei nesse projeto:
 - Modularização
